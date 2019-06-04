@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap');
-@import url('./import.css');
+@import url('./vars.css');
 
 * {
   margin: 0;
@@ -16,7 +16,12 @@ p {
   font-family: 'Lora', 'Georgia', serif;
 }
 
+li {
+  list-style: none;
+}
+
 .top-header {
   display: flex;
   background-color: black;
+  outline: 2px solid pink;
 }
