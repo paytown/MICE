@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: yellow;
+}
+p {
+  color: red;
+  font-family: 'Lora', 'Georgia', serif;
+}
+.top-header {
+  display: flex;
+  background-color: black;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "MICE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "postcss main.css -o index.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paytown/MICE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paytown/MICE/issues"
+  },
+  "homepage": "https://github.com/paytown/MICE#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "postcss": "^7.0.16",
+    "postcss-cli": "^6.1.2",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-simple-vars": "^5.0.2"
+  }
+}
