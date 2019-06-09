@@ -25,12 +25,20 @@ h2 {
 }
 
 p {
-  color: red;
   font-family: 'Lora', 'Georgia', serif;
+  font-size: 1.08em;
+  line-height: 1.6em;
+  margin: 2rem 0;
 }
 
 li {
   list-style: none;
+}
+
+figcaption {
+  color: $grey2;
+  font-size: .8em;
+  margin: .7rem 0;
 }
 
 #top-header {
@@ -100,11 +108,11 @@ main {
     }
 
     h1 {
-      margin: 1.5rem 0 1rem 0;
+      margin: 1.5rem 0;
     }
 
     h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .social-share {
@@ -137,6 +145,20 @@ main {
       img {
         height: 1.2rem;
       }
+    }
+  }
+}
+
+article {
+  img {
+    width: 100%;
+  }
+
+  footer {
+    background: pink;
+
+    img {
+      width: 3.5rem;
     }
   }
 }

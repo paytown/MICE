@@ -18,11 +18,18 @@ h2 {
   font-size: 1.8em;
 }
 p {
-  color: red;
   font-family: 'Lora', 'Georgia', serif;
+  font-size: 1.08em;
+  line-height: 1.6em;
+  margin: 2rem 0;
 }
 li {
   list-style: none;
+}
+figcaption {
+  color: #777777;
+  font-size: .8em;
+  margin: .7rem 0;
 }
 #top-header {
   display: flex;
@@ -80,10 +87,10 @@ main header .author-bar {
       margin: 0 .6rem;
     }
 main header h1 {
-      margin: 1.5rem 0 1rem 0;
+      margin: 1.5rem 0;
     }
 main header h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 main header .social-share {
       display: flex;
@@ -111,3 +118,12 @@ main header .social-share span {
 main header .social-share img {
         height: 1.2rem;
       }
+article img {
+    width: 100%;
+  }
+article footer {
+    background: pink;
+  }
+article footer img {
+      width: 3.5rem;
+    }
