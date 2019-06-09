@@ -6,10 +6,16 @@
 }
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
-  background-color: yellow;
 }
 a {
   text-decoration: none;
+}
+h1 {
+  font-size: 4em;
+  line-height: 1.1em;
+}
+h2 {
+  font-size: 1.8em;
 }
 p {
   color: red;
@@ -55,4 +61,53 @@ li {
 #top-header .header-social-icon {
     margin: 0 0 0 1rem;
   }
-
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 8rem;
+}
+main header {
+    border-top: 3px solid black;
+    padding: 1rem 0 2rem 0;
+  }
+main header #author {
+      font-size: .8em;
+      position: relative;
+      bottom: 1.25rem;
+    }
+main header .author-bar {
+      color: #aaaaaa;
+      margin: 0 .6rem;
+    }
+main header h1 {
+      margin: 1.5rem 0 1rem 0;
+    }
+main header h2 {
+      margin-bottom: 1rem;
+    }
+main header .social-share {
+      display: flex;
+    }
+main header .social-share div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: pink;
+        width: 9.5rem;
+        padding: .3rem .7rem;
+        margin-right: .7rem;
+      }
+main header .social-share div:nth-child(1) {
+        background-color: #3965a0;
+      }
+main header .social-share div:nth-child(2) {
+        background-color: #4db6ee;
+      }
+main header .social-share span {
+        color: white;
+        font-size: .7em;
+        font-weight: 600;
+      }
+main header .social-share img {
+        height: 1.2rem;
+      }

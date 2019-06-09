@@ -9,11 +9,19 @@
 
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
-  background-color: $banana;
 }
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1.1em;
+}
+
+h2 {
+  font-size: 1.8em;
 }
 
 p {
@@ -71,3 +79,64 @@ li {
   }
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 8rem;
+
+  header {
+    border-top: 3px solid black;
+    padding: 1rem 0 2rem 0;
+
+    #author {
+      font-size: .8em;
+      position: relative;
+      bottom: 1.25rem;
+    }
+
+    .author-bar {
+      color: $grey;
+      margin: 0 .6rem;
+    }
+
+    h1 {
+      margin: 1.5rem 0 1rem 0;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    .social-share {
+      display: flex;
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: pink;
+        width: 9.5rem;
+        padding: .3rem .7rem;
+        margin-right: .7rem;
+      }
+
+      div:nth-child(1) {
+        background-color: $fb-blue;
+      }
+
+      div:nth-child(2) {
+        background-color: $twitter-blue;
+      }
+
+      span {
+        color: white;
+        font-size: .7em;
+        font-weight: 600;
+      }
+
+      img {
+        height: 1.2rem;
+      }
+    }
+  }
+}
