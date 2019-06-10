@@ -76,6 +76,7 @@ main {
 main header {
     border-top: 3px solid black;
     padding: 1rem 0 2rem 0;
+
   }
 main header #author {
       font-size: .8em;
@@ -92,38 +93,40 @@ main header h1 {
 main header h2 {
       margin-bottom: 1.5rem;
     }
-main header .social-share {
-      display: flex;
+.social-share {
+  display: flex;
+}
+.social-share div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: pink;
+    width: 9.5rem;
+    padding: .3rem .7rem;
+    margin-right: .7rem;
+  }
+.social-share div:nth-child(1) {
+    background-color: #3965a0;
+  }
+.social-share div:nth-child(2) {
+    background-color: #4db6ee;
+  }
+.social-share span {
+    color: white;
+    font-size: .7em;
+    font-weight: 600;
+  }
+.social-share img {
+    height: 1.2rem;
+  }
+article figure img {
+      width: 100%;
     }
-main header .social-share div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: pink;
-        width: 9.5rem;
-        padding: .3rem .7rem;
-        margin-right: .7rem;
-      }
-main header .social-share div:nth-child(1) {
-        background-color: #3965a0;
-      }
-main header .social-share div:nth-child(2) {
-        background-color: #4db6ee;
-      }
-main header .social-share span {
-        color: white;
-        font-size: .7em;
-        font-weight: 600;
-      }
-main header .social-share img {
-        height: 1.2rem;
-      }
-article img {
-    width: 100%;
-  }
-article footer {
-    background: pink;
-  }
-article footer img {
+article footer #footer-row-top {
+      display: flex;
+      justify-content: space-between;
+      height: 1.75rem;
+    }
+article footer #footer-logo {
       width: 3.5rem;
     }

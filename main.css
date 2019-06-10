@@ -115,49 +115,56 @@ main {
       margin-bottom: 1.5rem;
     }
 
-    .social-share {
-      display: flex;
+  }
+}
 
-      div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: pink;
-        width: 9.5rem;
-        padding: .3rem .7rem;
-        margin-right: .7rem;
-      }
+.social-share {
+  display: flex;
 
-      div:nth-child(1) {
-        background-color: $fb-blue;
-      }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: pink;
+    width: 9.5rem;
+    padding: .3rem .7rem;
+    margin-right: .7rem;
+  }
 
-      div:nth-child(2) {
-        background-color: $twitter-blue;
-      }
+  div:nth-child(1) {
+    background-color: $fb-blue;
+  }
 
-      span {
-        color: white;
-        font-size: .7em;
-        font-weight: 600;
-      }
+  div:nth-child(2) {
+    background-color: $twitter-blue;
+  }
 
-      img {
-        height: 1.2rem;
-      }
-    }
+  span {
+    color: white;
+    font-size: .7em;
+    font-weight: 600;
+  }
+
+  img {
+    height: 1.2rem;
   }
 }
 
 article {
-  img {
-    width: 100%;
+  figure {
+    img {
+      width: 100%;
+    }
   }
 
   footer {
-    background: pink;
+    #footer-row-top {
+      display: flex;
+      justify-content: space-between;
+      height: 1.75rem;
+    }
 
-    img {
+    #footer-logo {
       width: 3.5rem;
     }
   }
