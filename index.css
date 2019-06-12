@@ -9,6 +9,7 @@ body {
 }
 a {
   text-decoration: none;
+  font-weight: 600;
 }
 h1 {
   font-size: 4em;
@@ -143,14 +144,24 @@ article aside {
     grid-column-start: 5;
     grid-column-end: 6;
   }
+article aside a {
+      color: #000000;
+      font-family: Helvetica, Arial, sans-serif;
+
+      display: flex;
+      flex-wrap: wrap;
+    }
 article aside section {
+      margin: .5rem 0 0;
       border-top: 3px solid black;
       padding: .5rem 0 0;
     }
 article aside .square-aside-image {
-      height: 5.75rem;
-      width: 5.75rem;
+      height: 92px;
+      width: 92px;
       overflow: hidden;
+
+      margin: 0 .4rem 0 0;
     }
 article aside .square-aside-image img {
         height: 100%;
