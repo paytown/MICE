@@ -41,7 +41,15 @@ figcaption {
   height: 5rem;
   width: 100%;
   padding: 0 2.5rem;
+
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 999;
 }
+#top-header img:hover {
+    opacity: 0.6;
+  }
 #top-header nav {
     display: flex;
     align-items: center;
@@ -72,6 +80,8 @@ main {
   display: flex;
   flex-direction: column;
   padding: 2.5rem 8rem;
+
+  margin: 80px 0 0;
 }
 main header {
     border-top: 3px solid black;
@@ -102,6 +112,7 @@ main header h2 {
     justify-content: space-between;
     background-color: pink;
     width: 9.5rem;
+    height: 1.75rem;
     padding: .3rem .7rem;
     margin-right: .7rem;
   }
@@ -122,11 +133,18 @@ main header h2 {
 article figure img {
       width: 100%;
     }
-article footer #footer-row-top {
-      display: flex;
-      justify-content: space-between;
-      height: 1.75rem;
-    }
 article footer #footer-logo {
       width: 3.5rem;
     }
+article footer .social-share {
+      margin: 1.2rem 0;
+    }
+article #tags {
+    font-size: .8em;
+    font-weight: 900;
+  }
+#footer {
+  margin-top: 2rem;
+  border-top: 3px solid black;
+  padding: 1rem 0 2rem 0;  
+}

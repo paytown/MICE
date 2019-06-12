@@ -52,6 +52,15 @@ figcaption {
   width: 100%;
   padding: 0 2.5rem;
 
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 999;
+
+  img:hover {
+    opacity: 0.6;
+  }
+
   nav {
     display: flex;
     align-items: center;
@@ -70,10 +79,11 @@ figcaption {
     font-size: .8em;
   }
 
+  
   a:hover {
     color: rgba(255, 255, 255, .6);
   }
-
+  
   ul {
     display: flex;
   }
@@ -91,6 +101,8 @@ main {
   display: flex;
   flex-direction: column;
   padding: 2.5rem 8rem;
+
+  margin: 80px 0 0;
 
   header {
     border-top: 3px solid black;
@@ -127,6 +139,7 @@ main {
     justify-content: space-between;
     background-color: pink;
     width: 9.5rem;
+    height: 1.75rem;
     padding: .3rem .7rem;
     margin-right: .7rem;
   }
@@ -158,14 +171,23 @@ article {
   }
 
   footer {
-    #footer-row-top {
-      display: flex;
-      justify-content: space-between;
-      height: 1.75rem;
-    }
-
     #footer-logo {
       width: 3.5rem;
     }
+
+    .social-share {
+      margin: 1.2rem 0;
+    }
   }
+
+  #tags {
+    font-size: .8em;
+    font-weight: 900;
+  }
+}
+
+#footer {
+  margin-top: 2rem;
+  border-top: 3px solid black;
+  padding: 1rem 0 2rem 0;  
 }
