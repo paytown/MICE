@@ -1,10 +1,10 @@
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("top-header").style.top = "0";
-  } else {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollpos < currentScrollPos) {
     document.getElementById("top-header").style.top = "-80px";
+  } else {
+    document.getElementById("top-header").style.top = "0";
   }
   prevScrollpos = currentScrollPos;
 }

@@ -98,14 +98,11 @@ figcaption {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
   padding: 2.5rem 8rem;
-
-  margin: 80px 0 0;
+  margin: 5rem 0 0;
 
   header {
-    border-top: 3px solid black;
+    border-top: $border-top;
     padding: 1rem 0 2rem 0;
 
     #author {
@@ -164,6 +161,40 @@ main {
 }
 
 article {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 10% 30%;
+
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  #article-grid {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  aside {
+    grid-column-start: 5;
+    grid-column-end: 6;
+
+    section {
+      border-top: $border-top;
+      padding: .5rem 0 0;
+    }
+  
+    .square-aside-image {
+      height: 5.75rem;
+      width: 5.75rem;
+      overflow: hidden;
+      
+      img {
+        height: 100%;
+      }
+    }
+  }
+
   figure {
     img {
       width: 100%;
@@ -188,6 +219,6 @@ article {
 
 #footer {
   margin-top: 2rem;
-  border-top: 3px solid black;
+  border-top: $border-top;
   padding: 1rem 0 2rem 0;  
 }
